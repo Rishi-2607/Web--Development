@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            font-size: 20px;
+            background-color: gold;
+            margin: 18px;
+            padding: 7px;
+        }
+        #shadow{
+            /* shadow tag is used to add shadow to the content and it looks attractive
+            {offset-x} {offset-y} {blur-color radius} {spread radius} these are the commands used */
+            box-shadow: -17px 20px 7px black;
+            text-shadow: 6px -3px white;
+            }
+            #Zdog{
+                box-shadow: -13px 23px 7px black;
+                text-shadow: 3px -3px  white;
+            }
+            #Jhonny{
+                box-shadow: -14px 24px 7px black;
+                text-shadow: 4px -3px white
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="shadow">
+            <h1>Doglike Shadow</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto numquam non error reiciendis! Illo aliquid ab consequuntur exercitationem quos et dolores suscipit, delectus perferendis tempora libero rerum cumque nisi amet nemo. Corrupti voluptatibus aperiam repellat ea sit dignissimos.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="Zdog">
+            <h1>Doglike Zdog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto numquam non error reiciendis! Illo aliquid ab consequuntur exercitationem quos et dolores suscipit, delectus perferendis tempora libero rerum cumque nisi amet nemo. Corrupti voluptatibus aperiam repellat ea sit dignissimos.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="Jhonny">
+            <h1>Doglike Jhonny</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto numquam non error reiciendis! Illo aliquid ab consequuntur exercitationem quos et dolores suscipit, delectus perferendis tempora libero rerum cumque nisi amet nemo. Corrupti voluptatibus aperiam repellat ea sit dignissimos.</p>
+        </div>
+    </div>
+</body>
+</html>

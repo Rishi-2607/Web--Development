@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 300px;
+            background-color: bisque;
+            border: 3px solid black;
+            /* All transition properties are similar to that of animation properties */
+            /* transition-property: background-color;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out; ---------we can write this as given below*/
+            transition: all 2s ease-in-out 2ms;
+            /* By using all tag we can apply transition function to all the commands */
+        }
+        .container:hover{
+        background-color: goldenrod;
+        font-size: 20px;
+        width: 400px;
+        height: 300px;
+        background-color: deeppink;
+        color: dimgray;
+        border-radius: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tutorial on transitons</h1>
+    </div>
+</body>
+</html>

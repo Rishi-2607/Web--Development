@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: rgb(255, 255, 255);
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            background-color: darkblue;
+            color: aqua;
+            border: 3px solid black;
+            height: 200px;
+            width: 300px;
+            justify-content: center;
+            transition: all 2s ease;
+            /* Transform is used to change the size and shape of the content */
+            
+        }
+        .box:hover{
+            /* These are some properties of transform function */
+            transform: scale(3);
+            /* transform: translate(500px ,500px); */
+            /* transform: translateX(500px);
+            transform: translateY(500px); */
+            /* transform: rotate(40deg);
+            transform: skew(20deg) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Tutorial On Transformation
+        </div>
+    </div>
+</body>
+</html>

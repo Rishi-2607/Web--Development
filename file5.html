@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+
+<body>
+    <h1>Class Form</h1>
+    <!-- FORM action is used to define the type of the form -->
+    <form action="developer.php">
+        <!-- input is used to define the type of data to be filled in the form it can be number or text.
+         **  Place holder is used to show enter your name at the form but dissappears when data is entered. -->
+         <!-- label tag is used to show that you cannot edit or highlight the data in the label* -->
+         <div>
+         <label for="studentname">Student Name :</label>
+             <input type="text" name="studentName" placeholder="Enter the name">
+        </div><br>
+        <div>
+            <label for="contact">Phone Number :</label> <input type="number" name="contact" id="" placeholder="Enter Phone no.">
+        </div><br>
+        <div>
+            Email : <input type="email" name="Email" id="" placeholder="Enter your email">
+        </div><br>
+        <div>
+            <!-- Radio button are used to take one input out of many!
+            We can also have many inouts in radio buttons by changing name of other radio button -->
+            Gender :
+            Male<input type="radio" name="gender" id="">
+            Female<input type="radio" name="gender" id="">
+            Other <input type="radio" name="gender" id="">
+        </div><br>
+        <div>
+            Date of birth : <input type="date" name="dob" id="">
+        </div><br>
+        <div>
+            <!-- we can choose the type of file(for ex- jpg,txt,etc) we want by using "accept" tag! -->
+            Upload Image : <input type="file" name="pic" id="" accept="image/*">
+        </div><br>
+        <div>
+            Residential address : <textarea name="address" id="" cols="50" rows="1"></textarea>
+        </div><br>
+        <div>
+        Full stack web developer <select name="Options" id="">
+            <option value="">yes</option>
+            <option value="">Definitely yes</option>
+            <option value="">Best developer</option> 
+        </select>
+    </div><br>
+        <div>
+            <!-- Checkbox input is used to tick the conditions 1
+            by using "checked" we can have the box ticked by default -->
+            Do you want to be the part of this college? <input type="checkbox" name="check" id="" checked >
+        </div><br>
+        <!-- submit input tag takes you to the backend work and another pasge is displayed for the submission of any form -->
+        <input type="submit" value="Submit Form">
+        <!-- reset input tag resets the whole page -->
+        <input type="reset" value="Reset Form">
+        <!-- button tag is used to create your own button -->
+        <input type="button" value="Skip Form">
+    </form>
+</body>
+
+</html>

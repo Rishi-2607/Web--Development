@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 350px;
+            border: 2px solid black;
+            /* Flex tag is used to align the boxes in a row-wise and column-wise manner and in both ways from top-bottom and bottom-top */
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center;
+            align-items: center; */
+    /* This flex-wrap tag is used to wrap the content instead of shrinking the content */
+            flex-wrap: wrap;
+        }
+        .dabba{
+            background-color: cornflowerblue;
+            font-size: larger;
+            height: 80px;
+            width: 70px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+        #box2{
+            /* Order property is used to change the position of the content  */
+            order: 4;
+            /* Flex grow increases the area/size of the content
+            Flex shrink decreases the area/size of the content */
+            flex-grow: 2;
+            /* this align center tag is used to change position of the particular content only */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dabba" id="box1">Dabba 1</div>
+        <div class="dabba" id="box2">Dabba 2</div>
+        <div class="dabba" id="box3">Dabba 3</div>
+        <div class="dabba" id="box4">Dabba 4</div>
+    </div>
+    
+</body>
+</html>

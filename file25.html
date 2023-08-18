@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS IN CSS!</title>
+    <style>
+        .container {
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            width: 1000px;
+            height: 150px;
+            border: 3px dashed black;
+            background-color: rgb(255, 255, 255);
+            animation-name: CODER;
+            position: relative;
+            /* Duration is used to tell for how long the animation should occur */
+            animation-duration: 0.5s;
+            /* Delay is used to start the animation after some time */
+            animation-delay: 3s;
+            /* Iteration count is used to specify for how many times u want the color to change */
+            animation-iteration-count: infinite;
+            /* Direction is used to tell which way it should change i.e, from backward to forward or vice versa */
+            animation-direction: alternate;
+            /* Timing Function is used to specify the speed change or varieties in speed of that animation */
+            animation-timing-function: ease;
+            /* Fill mode will retain the style w */
+            animation-fill-mode: both;
+        }
+
+        @keyframes CODER {
+            from {
+                top: 20px;
+                background-color: aqua;
+            }
+
+            to {
+                top: 200px;
+                background-color: rgb(255, 0, 0);
+            }
+            /* --THis is used to change the color from a color to some other color we want  */
+        /* 0%{
+            background-color: rgb(2, 221, 236);
+        }
+        25%{
+            background-color: rgb(170, 4, 87);
+        }
+        50%{
+
+            background-color: greenyellow;
+        }
+        75%{
+
+            background-color: firebrick;
+        }
+        100%{
+
+            background-color: salmon;
+        } */
+    }
+    </style>
+</head>
+
+<body>
+    <h1>This is not just a cartoon! This is Anime!</h1>
+    <div class="container"> SURPRISE SURPRISE THE KING IS BACK</div>
+</body>
+
+</html>
