@@ -1,4 +1,4 @@
-![Black Minimal Motivation Quote LinkedIn Banner (2)]("C:\Users\RISHI\OneDrive\Pictures\Screenshots\Screenshot (14).png")
+
 
 # Online Weather Website
 
